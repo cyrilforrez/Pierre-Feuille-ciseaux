@@ -1,0 +1,29 @@
+
+html {
+    color: black;
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+h1 {
+    color: white;
+    text-align: center
+}
+
+header {
+    padding: 2%;
+}
+
+/*-------------------------------------------score-----------------------------------------------------*/
+
+#score {
+    font-weight: bold; 
+    text-align: center;
+    font-size: 2em;
+    padding-top: 23%;
+}
+
+#versus {
+    margin-left: 30%;
+}
