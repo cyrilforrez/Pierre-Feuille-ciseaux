@@ -11,19 +11,13 @@ h1 {
     text-align: center
 }
 
-header {
-    padding: 2%;
+img.image {
+    border: 0 none;
+}
+img.image:hover {
+    border: 5px solid red;
 }
 
-/*-------------------------------------------score-----------------------------------------------------*/
-
-#score {
-    font-weight: bold; 
+.versus {
     text-align: center;
-    font-size: 2em;
-    padding-top: 23%;
-}
-
-#versus {
-    margin-left: 30%;
 }
