@@ -1,76 +1,69 @@
 //-------------------------------Declaration of variable----------------------------------------
 
-var Utilisateur;
-var Ordinateur ;
-var scoreJ = 0;
-var scoreO = 0;
+var Player;
+var Computer;
+var scoreP = 0;
+var scoreC = 0;
 
 //-----------------------------------Main loop---------------------------------------------
 
-while (Math.abs(scoreJ-scoreO)<2) {
-	Utilisateur = prompt("Choisissez-vous pierre, feuille, ou ciseaux ?");
-	Ordinateur = Math.random();
+Player = prompt("Veuillez entrer votre nom!");
 
-if (Ordinateur < 0.34) {
-	Ordinateur = "pierre";
-	} else if(Ordinateur <= 0.67) {
-	Ordinateur = "feuille";
-} else {
-	Ordinateur = "ciseaux";
-}
+	document.getElementById("compteur").innerHTML = Player +": "+ scoreP +" "+"-"+" "+"Computer:" +" "+ scoreC;    
+	    
+
+	
+
+	
 
 
 //------------------------------------------Main function---------------------------------------
 
-	var comparer = function(choix1, choix2) {
+	function comparer(choix) {
 	    var temp;
-	    if (choix1 == choix2) {
+		
+		Computer = Math.random();
+	    if (Computer < 0.34) {
+			Computer = "pierre";
+		} else if(Computer <= 0.67) {
+			Computer = "feuille";
+		} else {
+			Computer = "ciseaux";
+		}
+
+	    if (choix == Computer) {
 	        return "Egalité !";
 	    }
-	     else if (choix1 == "pierre") {
-	        if(choix2 == "ciseaux") {
+	     else if (choix == "pierre") {
+	        if(Computer == "ciseaux") {
 	            temp = 1;
-	            scoreJ++;
+	            scoreP++;
 	        }
 	        else {
 	            temp =  0;
-	            scoreO++;
+	            scoreC++;
 	        }
 	}
-	    else if (choix1 =="feuille") {
-	        if (choix2 =="pierre") {
+	    else if (choix =="feuille") {
+	        if (Computer =="pierre") {
 	            temp = 1;
-	            scoreJ++;
+	            scoreP++;
 	        }
 	        else {
 	            temp = 0;
-	            scoreO++;
+	            scoreC++;
 	        }
 	    }
-	    else if (choix1 =="ciseaux") {
-	        if (choix2 =="feuille") {
+	    else if (choix =="ciseaux") {
+	        if (Computer =="feuille") {
 	            temp = 1;
-	            scoreJ++;
+	            scoreP++;
 	        }
-	        if (choix2 =="pierre") {
+	        if (Computer =="pierre") {
 	            temp = 0;
-	            scoreO++;
+	            scoreC++;
 	        }
 	    }
 
-//-------------------------------------------Score display-----------------------------------------------
-
-	    document.getElementById("score").innerHTML = "Gagné: " + scoreJ + " fois. Perdu: " + scoreO + " fois.";    
-	    if (temp == 1) {
-	    	return "Vous avez gagné!";
-	    }
-	    else {
-	    	return "Vous avez perdu!";
-	    }
-
-		
-	}
-	alert("Ordinateur: "+Ordinateur +"."+" "+ "Vous: "+Utilisateur +".");
-	alert(comparer(Utilisateur,Ordinateur));
-	
-}
+	    console.log(choix,Computer); 
+	} 
