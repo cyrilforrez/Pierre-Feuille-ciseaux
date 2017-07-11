@@ -1,4 +1,3 @@
-
 html {
     color: black;
     background-color: white;
@@ -13,11 +12,46 @@ h1 {
 
 img.image {
     border: 0 none;
+    /*----------Removes the border by default------------*/
 }
+
 img.image:hover {
     border: 5px solid red;
+    /*--------------------Display border-----------------*/
 }
 
 .versus {
     text-align: center;
+}
+
+#player {
+    position: relative;
+    /*animation: mymove 5s;*/
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 150px;
+    }
+    animation-fill-mode: forwards;
+}
+
+#computer {
+    position: relative;
+    /*animation: mymove2 5s;*/
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove2 {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -150px;
+    }
+    animation-fill-mode: forwards;
 }
