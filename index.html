@@ -15,30 +15,28 @@
         <header>
             <div class="row justify-content-center offset-lg-3 offset-md-3 offset-sm-1 offset-1">
                 <h1>Pierre Feuille Ciseau</h1>
-
-<!--#################################################Table Score########################################-->
-
+                <!--#################################################Table Score########################################-->
                 <p id="score" class="hidden-md-up offset-md-4 offset-sm-3 offset-2">P:O - C:O</p>
                 <p id="compteur" class="hidden-sm-down offset-lg-3 offset-md-2">Player:0 - Computer:0</p>
             </div>
         </header>
-
-<!--#########################################Player Cards#################################################-->
-
+        <!--#########################################Player Cards#################################################-->
         <div id="player" class="row justify-content-center col-lg-12 col-12">
             <img id="ciseaux" class="image col-lg-3 col-md-4 col-sm-4 col-3" onclick="comparer('ciseaux')" src="img/pc/ciseaux.png" alt="ciseaux">
             <img id="pierre" class="image col-lg-3 col-md-4 col-sm-4 col-3" onclick="comparer('pierre')" src="img/pc/pierre.png" alt="pierre">
             <img id="feuille" class="image col-lg-3 col-md-4 col-sm-4 col-3" onclick="comparer('feuille')" src="img/pc/feuille.png" alt="feuille">
         </div>
         <div class="versus col-lg-12 col-12">VS</div>
-
-<!--#############################################Computer Cards#############################################-->
-
+        <!--#############################################Computer Cards#############################################-->
         <div id="computer" class="row justify-content-center col-lg-12 col-12">
             <img id="scissors" class="col-lg-3 col-md-4 col-sm-4 col-3" src="img/pc/ciseaux.png" alt="ciseaux">
             <img id="stone" class="col-lg-3 col-md-4 col-sm-4 col-3" src="img/pc/pierre.png" alt="pierre">
             <img id="leaf" class="col-lg-3 col-md-4 col-sm-4 col-3" src="img/pc/feuille.png" alt="feuille">
         </div>
+    </div>
+
+    <div id="end">
+        <p>Au revoir!</p>
     </div>
     <script src=js/bootstrap.js></script>
     <script type="text/javascript" src="js/main.js">
