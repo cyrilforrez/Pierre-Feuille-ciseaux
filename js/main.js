@@ -170,18 +170,18 @@ function comparer(choix) {
 
 
 
-        if (confirm = confirm("Voulez vous rejouer?")) {
-            window.location.reload();
+        if (confirm = confirm("Voulez vous rejouer?")) {    //--------------Output option
+            window.location.reload();                       //--------------Reload page
         } else {
-            document.getElementById("end").style.display = 'block';
+            document.getElementById("end").style.display = 'block';       //---------Poster page goodbye
             document.getElementById("end").style.zIndex = '1';
         }
     } else if ((scoreC) == 3)  {
         alert("Vous avez perdu!" + " " + Player + ": " + scoreP + " " + "-" + " " + "Computer" + ":" + " " + scoreC);
-        if (confirm = confirm("Voulez vous rejouer?")) {
-            window.location.reload();
+        if (confirm = confirm("Voulez vous rejouer?")) {    //--------------Output option
+            window.location.reload();                      //---------------Reload page
         } else {
-            document.getElementById("end").style.display = 'block';
+            document.getElementById("end").style.display = 'block';    //-------Poster page goodbye
             document.getElementById("end").style.zIndex = '1';
         }
     }
