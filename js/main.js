@@ -61,10 +61,11 @@ function comparer(choix) {
     if (choix == Computer) {
 
         alert("Egalité !");
+    //----------------------------------------------Poster image--------------------------------------------------
         image1.style.display = '';
         image2.style.display = '';
         image3.style.display = '';
-        image4.style.display = '';
+        image4.style.display = '';          
         image5.style.display = '';
         image6.style.display = '';
 
@@ -73,11 +74,13 @@ function comparer(choix) {
         if (Computer == "ciseaux") {
             temp = 1;
             scoreP++;
+    //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("player").style.animation = "mymove 3s";
             document.getElementById("player").style.zIndex = "1";
             document.getElementById("player").style.animationFillMode = "forwards";
             alert("Vous avez gagné!");
             document.getElementById("player").style.animationFillMode = "backwards";
+    //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -88,10 +91,12 @@ function comparer(choix) {
         } else {
             temp = 0;
             scoreC++;
+    //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("computer").style.animation = "mymove2 3s";
             document.getElementById("computer").style.animationFillMode = "forwards";
             alert("Vous avez perdu!");
             document.getElementById("computer").style.animationFillMode = "backwards";
+    //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -103,11 +108,13 @@ function comparer(choix) {
         if (Computer == "pierre") {
             temp = 1;
             scoreP++;
+    //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("player").style.animation = "mymove 3s";
             document.getElementById("player").style.zIndex = "1";
             document.getElementById("player").style.animationFillMode = "forwards";
             alert("Vous avez gagné!");
             document.getElementById("player").style.animationFillMode = "backwards";
+    //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -117,10 +124,12 @@ function comparer(choix) {
         } else {
             temp = 0;
             scoreC++;
+    //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("computer").style.animation = "mymove2 3s";
             document.getElementById("computer").style.animationFillMode = "forwards";
             alert("Vous avez perdu!");
             document.getElementById("computer").style.animationFillMode = "backwards";
+    //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -133,11 +142,13 @@ function comparer(choix) {
         if (Computer == "feuille") {
             temp = 1;
             scoreP++;
+    //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("player").style.animation = "mymove 3s";
             document.getElementById("player").style.zIndex = "1";
             document.getElementById("player").style.animationFillMode = "forwards";
             alert("Vous avez gagné!");
             document.getElementById("player").style.animationFillMode = "backwards";
+    //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -148,10 +159,12 @@ function comparer(choix) {
         if (Computer == "pierre") {
             temp = 0;
             scoreC++;
+    //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("computer").style.animation = "mymove2 3s";
             document.getElementById("computer").style.animationFillMode = "forwards";
             alert("Vous avez perdu!");
             document.getElementById("computer").style.animationFillMode = "backwards";
+    //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
