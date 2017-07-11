@@ -61,11 +61,11 @@ function comparer(choix) {
     if (choix == Computer) {
 
         alert("Egalité !");
-    //----------------------------------------------Poster image--------------------------------------------------
+        //----------------------------------------------Poster image--------------------------------------------------
         image1.style.display = '';
         image2.style.display = '';
         image3.style.display = '';
-        image4.style.display = '';          
+        image4.style.display = '';
         image5.style.display = '';
         image6.style.display = '';
 
@@ -74,13 +74,13 @@ function comparer(choix) {
         if (Computer == "ciseaux") {
             temp = 1;
             scoreP++;
-    //------------------------------------Launches animation------------------------------------------------------
+            //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("player").style.animation = "mymove 3s";
             document.getElementById("player").style.zIndex = "1";
             document.getElementById("player").style.animationFillMode = "forwards";
             alert("Vous avez gagné!");
             document.getElementById("player").style.animationFillMode = "backwards";
-    //----------------------------------------------Poster image--------------------------------------------------
+            //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -91,12 +91,12 @@ function comparer(choix) {
         } else {
             temp = 0;
             scoreC++;
-    //------------------------------------Launches animation------------------------------------------------------
+            //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("computer").style.animation = "mymove2 3s";
             document.getElementById("computer").style.animationFillMode = "forwards";
             alert("Vous avez perdu!");
             document.getElementById("computer").style.animationFillMode = "backwards";
-    //----------------------------------------------Poster image--------------------------------------------------
+            //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -108,13 +108,13 @@ function comparer(choix) {
         if (Computer == "pierre") {
             temp = 1;
             scoreP++;
-    //------------------------------------Launches animation------------------------------------------------------
+            //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("player").style.animation = "mymove 3s";
             document.getElementById("player").style.zIndex = "1";
             document.getElementById("player").style.animationFillMode = "forwards";
             alert("Vous avez gagné!");
             document.getElementById("player").style.animationFillMode = "backwards";
-    //----------------------------------------------Poster image--------------------------------------------------
+            //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -124,12 +124,12 @@ function comparer(choix) {
         } else {
             temp = 0;
             scoreC++;
-    //------------------------------------Launches animation------------------------------------------------------
+            //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("computer").style.animation = "mymove2 3s";
             document.getElementById("computer").style.animationFillMode = "forwards";
             alert("Vous avez perdu!");
             document.getElementById("computer").style.animationFillMode = "backwards";
-    //----------------------------------------------Poster image--------------------------------------------------
+            //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -142,13 +142,13 @@ function comparer(choix) {
         if (Computer == "feuille") {
             temp = 1;
             scoreP++;
-    //------------------------------------Launches animation------------------------------------------------------
+            //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("player").style.animation = "mymove 3s";
             document.getElementById("player").style.zIndex = "1";
             document.getElementById("player").style.animationFillMode = "forwards";
             alert("Vous avez gagné!");
             document.getElementById("player").style.animationFillMode = "backwards";
-    //----------------------------------------------Poster image--------------------------------------------------
+            //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -159,12 +159,12 @@ function comparer(choix) {
         if (Computer == "pierre") {
             temp = 0;
             scoreC++;
-    //------------------------------------Launches animation------------------------------------------------------
+            //------------------------------------Launches animation------------------------------------------------------
             document.getElementById("computer").style.animation = "mymove2 3s";
             document.getElementById("computer").style.animationFillMode = "forwards";
             alert("Vous avez perdu!");
             document.getElementById("computer").style.animationFillMode = "backwards";
-    //----------------------------------------------Poster image--------------------------------------------------
+            //----------------------------------------------Poster image--------------------------------------------------
             image1.style.display = '';
             image2.style.display = '';
             image3.style.display = '';
@@ -183,18 +183,18 @@ function comparer(choix) {
 
 
 
-        if (confirm = confirm("Voulez vous rejouer?")) {    //--------------Output option
-            window.location.reload();                       //--------------Reload page
+        if (confirm = confirm("Voulez vous rejouer?")) { //--------------Output option
+            window.location.reload(); //--------------Reload page
         } else {
-            document.getElementById("end").style.display = 'block';       //---------Poster page goodbye
+            document.getElementById("end").style.display = 'block'; //---------Poster page goodbye
             document.getElementById("end").style.zIndex = '1';
         }
     } else if ((scoreC) == 3)  {
         alert("Vous avez perdu!" + " " + Player + ": " + scoreP + " " + "-" + " " + "Computer" + ":" + " " + scoreC);
-        if (confirm = confirm("Voulez vous rejouer?")) {    //--------------Output option
-            window.location.reload();                      //---------------Reload page
+        if (confirm = confirm("Voulez vous rejouer?")) { //--------------Output option
+            window.location.reload(); //---------------Reload page
         } else {
-            document.getElementById("end").style.display = 'block';    //-------Poster page goodbye
+            document.getElementById("end").style.display = 'block'; //-------Poster page goodbye
             document.getElementById("end").style.zIndex = '1';
         }
     }
