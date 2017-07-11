@@ -167,18 +167,18 @@ function comparer(choix) {
 
     if ((scoreP) == 3) {
         alert("Vous avez gagné!" + " " + Player + ": " + scoreP + " " + "-" + " " + "Computer" + ":" + " " + scoreC);
-        confirm("Voulez vous rejouer?");
-        if (confirm == true) {
+
+
+
+        if (confirm = confirm("Voulez vous rejouer?")) {
             window.location.reload();
         } else {
             document.getElementById("end").style.display = 'block';
             document.getElementById("end").style.zIndex = '1';
         }
-    }
-    else if ((scoreC) == 3)  {
+    } else if ((scoreC) == 3)  {
         alert("Vous avez perdu!" + " " + Player + ": " + scoreP + " " + "-" + " " + "Computer" + ":" + " " + scoreC);
-        confirm("Voulez vous rejouer?");
-        if (confirm == true) {
+        if (confirm = confirm("Voulez vous rejouer?")) {
             window.location.reload();
         } else {
             document.getElementById("end").style.display = 'block';
