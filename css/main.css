@@ -30,7 +30,8 @@ img.image:hover {
     animation-fill-mode: forwards;
 }
 
-@keyframes mymove {
+/*-----------animation of player------------*/
+@keyframes mymove {     
     0% {
         top: 0px;
     }
@@ -45,7 +46,8 @@ img.image:hover {
     animation-fill-mode: forwards;
 }
 
-@keyframes mymove2 {
+/*-----------animation of computer-----------*/
+@keyframes mymove2 {         
     0% {
         top: 0px;
     }
